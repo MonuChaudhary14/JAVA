@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-// We cannot make any method or variable static which is generic then the same generic type will be shown to all the elements
+// We can make any generic method static
 
 class Data{
     private Object object;

@@ -76,3 +76,13 @@ Since t is declared without a specific type, Java assumes Object, requiring an e
     }
 
 }
+
+class MyClass {
+    public static <T> void printArray(T[] array) {
+        for (T element : array) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+}
+

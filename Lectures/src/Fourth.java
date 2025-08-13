@@ -59,7 +59,8 @@ public class Fourth {  // Only one class can be public
         /*
         Static
 
-        Static blocks, also known as static initialization blocks, are used to initialize static variables. They are executed only once when the class is first loaded into memory, before the main method or any other static methods. Static blocks can be used to perform complex static initializations that cannot be done in a single line of code.
+        Static blocks, also known as static initialization blocks, are used to initialize static variables. They are executed only once when the class is first loaded into memory, before the main method or any other static methods.
+        Static blocks can be used to perform complex static initializations that cannot be done in a single line of code.
 
 Key Points:
 
@@ -71,7 +72,7 @@ Can perform complex initializations.
 
 Example:
 
-java
+
 public class Example {
     static int count;
     static String message;
@@ -94,7 +95,8 @@ The static block initializes the static variables count and message.
 The block is executed when the class is loaded, ensuring that the static variables are initialized before they are used.
 
 Static Nested Classes
-Static nested classes are static classes defined within another class. They can access the static members of the outer class directly but cannot access non-static members without an instance of the outer class. Static nested classes are often used to logically group classes that will only be used in one place, increasing encapsulation and reducing clutter.
+Static nested classes are static classes defined within another class. They can access the static members of the outer class directly but cannot access non-static members without an instance of the outer class.
+Static nested classes are often used to logically group classes that will only be used in one place, increasing encapsulation and reducing clutter.
 
 Key Points:
 

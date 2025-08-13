@@ -8,6 +8,56 @@ package Array_List_Creation;
 
 import java.util.Arrays;
 
+// it extends AbstractList and implements List Interface
+
+
+/*
+| Feature                                 | Description                                                      |
+| --------------------------------------- | ---------------------------------------------------------------- |
+| ✅ **Dynamic sizing**                    | Automatically resizes as needed (no need to declare fixed size). |
+| ✅ **Indexed access**                    | Elements can be accessed using indexes like arrays.              |
+| ✅ **Maintains order**                   | Elements are stored in the order they were added.                |
+| ✅ **Allows duplicates**                 | You can add duplicate values.                                    |
+| ✅ **Heterogeneous types (with Object)** | If declared with `Object`, can store different types.            |
+
+
+Limitations:
+Slower for frequent insertions/deletions in the middle (use LinkedList for that).
+
+Not thread-safe (use Vector or Collections.synchronizedList() for thread safety)
+
+
+Types of Constructor
+
+1. ArrayList()
+Creates an empty list with default initial capacity (usually 10).
+
+ArrayList<String> list = new ArrayList<>();
+
+
+2. ArrayList(int initialCapacity)
+Creates an empty list with the specified initial capacity.
+
+ArrayList<Integer> numbers = new ArrayList<>(20);
+
+
+
+3. ArrayList(Collection<? extends E> c)
+Creates a list containing the elements of the specified collection.
+
+import java.util.*;
+
+List<String> oldList = List.of("A", "B", "C");
+ArrayList<String> newList = new ArrayList<>(oldList);
+
+
+
+
+
+
+
+
+ */
 
 public class Array_List {
 

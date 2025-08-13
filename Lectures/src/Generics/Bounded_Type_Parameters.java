@@ -10,7 +10,7 @@ public class Bounded_Type_Parameters {
 
 }
 
-class Information<K extends Integer/*Super Class*/ /* '&' can be used to bound more */ , V extends Naam>{      // extends means K must be an Integer or a subclass of Integer
+class Information<K extends Integer/*Super Class    '&' can be used to bound more */ , V extends Naam>{      // extends means K must be an Integer or a subclass of Integer
     // for V -->  It must be Naam or a subclass of Naam Class
     private K key;
     private V value;

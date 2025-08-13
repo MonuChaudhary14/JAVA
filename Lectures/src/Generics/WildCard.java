@@ -11,13 +11,11 @@ public class WildCard {
 A wildcard (?) represents an unknown type. It is used in generic classes, methods, and parameters.
 
 Example of a Simple Wildcard
-java
-Copy
-Edit
+
 public static void printList(List<?> list) {
     for (Object element : list) {
         System.out.println(element);
-    }
+    }   
 }
 ? means the method can accept a list of any type (List<Integer>, List<String>, etc.).
 
@@ -27,18 +25,16 @@ But you cannot add elements to the list because Java doesn't know the exact type
 There are three types of wildcards in Java:
 
 Wildcard	Meaning
-?	Unbounded wildcard (accepts any type)
+
 ? extends T	Upper-bounded wildcard (T or any subclass of T)
 ? super T	Lower-bounded wildcard (T or any superclass of T)
-3. Unbounded Wildcard (?)
+3. Unbounded Wildcard (?) (accepts any type)
 Allows a method to accept a collection of any type.
 
 Useful when you don’t care about the type.
 
 Example
-java
-Copy
-Edit
+
 import java.util.*;
 
 public class WildcardExample {
@@ -57,15 +53,14 @@ public class WildcardExample {
     }
 }
 Output
-css
-Copy
-Edit
+
 1
 2
 3
 A
 B
 C
+
 Key Points
 Can only read elements, but cannot add new elements (list.add(...) is not allowed).
 
@@ -196,3 +191,4 @@ Sorting works safely because all elements are Comparable.
     }
 
 }
+

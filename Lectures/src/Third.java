@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class Third {
@@ -34,11 +32,10 @@ public class Third {
         9.Math.round(x);  this round off the number and return in integer form
         */
 
-
         //String
 
         //In Java , String is basically an object that represents a sequence of char values. An array of characters works same as Java String.
-        //Strings objects are immutable means they cannot be modified and changable.
+        //Strings objects are immutable means they cannot be modified and changeable.
         //Once a string object is created its data or state cannot be changed.
         char ch[] = {'M' , 'O' , 'N' , 'U'};
 
@@ -74,7 +71,7 @@ public class Third {
         if(name ==  name1){
             System.out.println("Both are same");
         }
-        else{    // when we are using "==" , in this case it check the reference in derived or user definrd data types not the actual the value.  In this both have different location so else condition executes
+        else{    // when we are using "==" , in this case it check the reference in derived or user defined data types not the actual the value.  In this both have different location so else condition executes
             System.out.println("Both are not same");
         }
 
@@ -125,6 +122,7 @@ public class Third {
     static public int average(int a, int b){
         return (a+b)/2;
     }
+
      public static int getrandom(int a , int b){
         //return Math.random()*6;
          return (int)(Math.random()*(b-a+1)+a);  // this is used to give value between two numbers

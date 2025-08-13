@@ -12,6 +12,7 @@ public class Array_List {
         list.add("Monu");
         list.add("Chaudhary");
         list.add("Poonia");
+//      list.add(15);  This will throw an error due to type mismatch
 
         System.out.println(list);
 
@@ -28,6 +29,9 @@ public class Array_List {
         System.out.println(list);
 
         list.set(0 , "Jaat");    // This also returns true or false, so it can be use in sout
+
+        // To remove an integer element and avoid considering the number as index use
+//        list.remove(Integer.valueOf(10));
 
 
         System.out.println(list);
@@ -69,9 +73,7 @@ Maintains Insertion Order: Elements remain in the order they were added.
 Not Thread-Safe: Multiple threads modifying an ArrayList may cause issues.
 
 📌 Declaration and Initialization
-java
-Copy
-Edit
+
 import java.util.ArrayList;
 
 public class ArrayListExample {
@@ -88,9 +90,38 @@ public class ArrayListExample {
         System.out.println(list);  // Output: [Apple, Banana, Cherry]
     }
 }
+
+
+Types of Constructor
+
+1. ArrayList()
+Creates an empty list with default initial capacity (usually 10).
+
+ArrayList<String> list = new ArrayList<>();
+
+
+2. ArrayList(int initialCapacity)
+Creates an empty list with the specified initial capacity.
+
+ArrayList<Integer> numbers = new ArrayList<>(20);
+
+
+
+3. ArrayList(Collection<? extends E> c)
+Creates a list containing the elements of the specified collection.
+
+import java.util.*;
+
+List<String> oldList = List.of("A", "B", "C");
+ArrayList<String> newList = new ArrayList<>(oldList);
+
+
+
+
 📌 Common Methods
 Method	Description
 add(E e)	Adds an element at the end.
+boolean addAll(Collection < ? extends T> c)
 add(int index, E e)	Inserts an element at a specific index.
 get(int index)	Retrieves the element at the specified index.
 set(int index, E e)	Replaces the element at the specified index.
@@ -102,9 +133,7 @@ indexOf(Object o)	Returns the index of the first occurrence of the element.
 clear()	Removes all elements from the list.
 isEmpty()	Checks if the list is empty.
 📌 Example: Using Methods
-java
-Copy
-Edit
+
 import java.util.ArrayList;
 
 public class ArrayListMethods {
@@ -192,14 +221,10 @@ public class SortingArrayList {
     }
 }
 📌 Converting ArrayList to Array
-java
-Copy
-Edit
+
 String[] arr = list.toArray(new String[0]);
 📌 Convert Array to ArrayList
-java
-Copy
-Edit
+
 String[] arr = {"A", "B", "C"};
 ArrayList<String> list = new ArrayList<>(Arrays.asList(arr));
 📌 ArrayList vs LinkedList

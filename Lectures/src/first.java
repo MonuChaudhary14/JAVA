@@ -69,11 +69,20 @@ public class first {
         System.out.println("Enter your age");
 
         int age = k.nextInt();
-        String name = k.nextLine();  // This will take string value but it also takes enter and other keys also
+        String name = k.nextLine();  // This will take string value, but it also takes enter and other keys also
         String surname = k.next();   // This will also take string but this will not take enter and other keys like backspace in input command
 //        float age1 = k.nextFloat();
 //        long age2 = k.nextLong();
         k.close(); //It is used to release memory
+
+//        Scanner sc = new Scanner("Hello 123 true");
+//        String word = sc.next();  // "Hello"
+//        int num = sc.nextInt();   // 123
+//        boolean b = sc.nextBoolean(); // true
+
+
+//        Scanner sc = new Scanner(new File("input.txt"));
+
 
 
         System.out.println("Your age is "+age);
@@ -84,7 +93,7 @@ public class first {
 
 //         m > n ? max1 = m : max1 = n; This is wrong because we cannot use it directly , we have to give it to sout function or assign it value to a variable. We can also call the functions in this operator
 
-        String ans = m > n ? "This can be used but sout cannnot be used in this(reason below)": "This cannot be used in this ";
+//        String ans = m > n ? "This can be used but sout cannot be used in this(reason below)": "This cannot be used in this ";
 
         max1 = m > n ? m : n;
         // nesting is also allowed in ternary operator

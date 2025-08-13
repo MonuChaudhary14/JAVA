@@ -3,7 +3,7 @@ import java.util.*;
 
 /*  Commonly Used Notation
 
-T- Type
+T- Template
 E- Element
 K- Key
 N- Number
@@ -14,7 +14,7 @@ public class _3rd {
 
     public static void main(String[] args) {
 
-        Generic<Integer,String> d = new Generic<>(4, "Monu");
+        Generic<Integer,String> d = new Generic</*Integer, String*/>(4, "Monu");
 
         System.out.println(d);
 
@@ -26,12 +26,12 @@ public class _3rd {
 
 }
 
-class Generic<K , V>{
+class Generic<K , V>{    // We can also give T1 , T2 also
 
-    private K key;
+    private K key;   // We can also make it array
     private V value;
 
-    public Generic(K key  , V value){
+    public Generic(K key  , V value){  
         this.key = key;
         this.value = value;
     }
@@ -48,7 +48,7 @@ class Generic<K , V>{
         return key + " = " + value;
     }
 
-    public <E,N> void display(E element , N number){
+    public static <E,N> void display(E element , N number){  // A generic method or any method in a generic class can be declared as static
         System.out.println("Element "+element+" is "+number);
     }
 
